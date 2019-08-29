@@ -1,0 +1,12 @@
+description "Demonstration of simple web-socket server\377";
+
+uses
+	Core;
+
+file
+	WebSocket.cpp,
+	demo.html;
+
+mainconfig
+	"" = "";
+

@@ -1,0 +1,19 @@
+description "Spirograph Plotting\377";
+
+uses
+	CtrlLib,
+	Painter,
+	plugin/jpg,
+	Report;
+
+file
+	icon.rc,
+	GeoFun.h,
+	app.tpp,
+	GeoFun.cpp,
+	GeoFun.lay,
+	GeoFun.iml;
+
+mainconfig
+	"" = "GUI MT";
+

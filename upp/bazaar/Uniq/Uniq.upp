@@ -1,0 +1,8 @@
+description "A class for single-instance applications\377";
+
+file
+	Uniq.h,
+	Posix.cpp,
+	Windows.cpp,
+	Uniq.t;
+

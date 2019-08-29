@@ -1,0 +1,14 @@
+uses
+	Core,
+	Py;
+
+file
+	PyTest.h,
+	embedd.cpp,
+	extend.cpp,
+	main.cpp;
+
+mainconfig
+	"" = "MT",
+	"" = "MT";
+

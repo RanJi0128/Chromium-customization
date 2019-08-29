@@ -1,0 +1,15 @@
+description "example how to move Ctrl in live environment using CtrlMover\377";
+
+uses
+	CtrlLib,
+	CtrlMover,
+	AutoScroller;
+
+file
+	CtrlMoverTest.h,
+	main.cpp,
+	CtrlMoverTest.lay;
+
+mainconfig
+	"" = "GUI MT";
+

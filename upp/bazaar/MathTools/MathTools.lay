@@ -1,0 +1,50 @@
+LAYOUT(MathTools, 812, 476)
+	ITEM(ArrayCtrl, examplesList, LeftPosZ(2, 100).VSizePosZ(24, 2))
+	ITEM(Label, dv___1, SetLabel(t_("Choose tool")).LeftPosZ(2, 100).TopPosZ(2, 21))
+END_LAYOUT
+
+LAYOUT(TabCalculator, 712, 360)
+	ITEM(Calculator, code, SetFrame(ThinInsetFrame()).HSizePosZ(0, 140).VSizePosZ(2, 24))
+	ITEM(Label, dv___1, SetLabel(t_("Variables")).RightPosZ(0, 136).TopPosZ(264, 18))
+	ITEM(Label, dv___2, SetLabel(t_("Functions")).RightPosZ(0, 136).TopPosZ(2, 18))
+	ITEM(Label, dv___3, SetLabel(t_("Constants")).RightPosZ(0, 136).TopPosZ(132, 18))
+	ITEM(Option, trigInGrad, SetLabel(t_("Trig. in grad.")).LeftPosZ(180, 92).BottomPosZ(2, 18))
+	ITEM(Label, dv___5, SetLabel(t_("Tab. chars.")).LeftPosZ(412, 60).BottomPosZ(2, 18))
+	ITEM(EditIntSpin, tabChars, Max(40).Min(2).NotNull(true).LeftPosZ(472, 40).BottomPosZ(2, 18))
+	ITEM(Label, dv___7, SetLabel(t_("Num. decimals:")).LeftPosZ(288, 84).BottomPosZ(2, 18))
+	ITEM(EditIntSpin, numDecimals, Max(15).Min(0).NotNull(true).LeftPosZ(372, 32).BottomPosZ(2, 18))
+	ITEM(ArrayCtrl, gridFunctions, RightPosZ(-2, 138).TopPosZ(20, 108))
+	ITEM(ArrayCtrl, gridConstants, RightPosZ(-2, 138).TopPosZ(152, 108))
+	ITEM(ArrayCtrl, gridVariables, RightPosZ(-2, 138).VSizePosZ(284, 0))
+	ITEM(Option, justEdit, SetLabel(t_("Just edit")).LeftPosZ(4, 68).BottomPosZ(2, 18))
+	ITEM(Option, caseSensitivity, SetLabel(t_("Case sensitivity")).LeftPosZ(68, 112).BottomPosZ(2, 18))
+END_LAYOUT
+
+LAYOUT(TabData_Up, 472, 332)
+	ITEM(ScatterCtrl, scatter, SetPlotAreaLeftMargin(60).SetPlotAreaTopMargin(20).SetPlotAreaColor(Color(229, 229, 229)).SetAxisWidth(12).SetTitleFont(SansSerifZ(14).Bold()).SetLegendAnchor(4).HSizePosZ(0, 0).VSizePosZ(0, 0))
+END_LAYOUT
+
+LAYOUT(TabData_Down, 496, 288)
+	ITEM(Option, butSetPM, SetLabel(t_("Autoset")).RightPosZ(4, 60).TopPosZ(4, 16))
+	ITEM(Option, butFitPM, SetLabel(t_("Auto fit")).RightPosZ(68, 60).TopPosZ(4, 16))
+	ITEM(EditString, editFile, HSizePosZ(44, 132).TopPosZ(4, 19))
+	ITEM(Label, dv___3, SetLabel(t_("File:")).LeftPosZ(4, 40).TopPosZ(4, 19))
+	ITEM(Splitter, splitterDown, HSizePosZ(0, 0).VSizePosZ(24, 0))
+END_LAYOUT
+
+LAYOUT(TabData_Down_L, 308, 288)
+	ITEM(GridCtrl, gridDef, HSizePosZ(8, 8).VSizePosZ(68, 8))
+	ITEM(Button, butAutoset, SetLabel(t_("Autoset")).LeftPosZ(64, 52).TopPosZ(44, 20))
+	ITEM(Label, dv___2, SetLabel(t_("# row is header")).LeftPosZ(36, 84).TopPosZ(20, 16))
+	ITEM(EditIntSpin, nIsHeader, Min(0).NotNull(true).LeftPosZ(8, 28).TopPosZ(20, 19))
+	ITEM(Option, butShowAll, SetLabel(t_("Show all")).LeftPosZ(176, 80).TopPosZ(48, 16))
+	ITEM(Button, butUpdate, SetLabel(t_("Update")).LeftPosZ(120, 52).TopPosZ(44, 20))
+	ITEM(Button, butClearDef, SetLabel(t_("Clear")).LeftPosZ(8, 52).TopPosZ(44, 20))
+	ITEM(LabelBox, dv___7, SetLabel(t_("Select data from right table")).HSizePosZ(4, 0).VSizePosZ(4, 4))
+END_LAYOUT
+
+LAYOUT(TabData_Down_R, 264, 296)
+	ITEM(GridCtrl, grid, HSizePosZ(0, 4).VSizePosZ(28, 4))
+	ITEM(Button, butClear, SetLabel(t_("Clear")).LeftPosZ(0, 52).TopPosZ(4, 20))
+END_LAYOUT
+

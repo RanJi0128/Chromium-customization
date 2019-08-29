@@ -1,0 +1,39 @@
+description "Fundamental SQL classes - session, cursor, SQL language expressions, DB schemas\377";
+
+charset "UTF-8";
+
+acceptflags
+	NOAPPSQL;
+
+uses
+	Core;
+
+file
+	Sql.h options(BUILDER_OPTION) PCH,
+	Sqlexp.h,
+	SqlCode.cpp,
+	SqlVal.cpp,
+	SqlBool.cpp,
+	SqlSet.cpp,
+	SqlStatement.cpp,
+	Sqls.h,
+	Sql.cpp,
+	Session.cpp,
+	Script.cpp,
+	MassInsert.cpp,
+	Schema readonly separator,
+	SqlSchema.h,
+	SqlSchema.cpp,
+	S_info.cpp,
+	sch_model.h,
+	sch_header.h,
+	sch_source.h,
+	sch_schema.h,
+	util_td.cpp,
+	IntroSch.cpp,
+	ExportSch.cpp,
+	Info readonly separator,
+	src.tpp,
+	srcdoc.tpp,
+	Copying;
+

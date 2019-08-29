@@ -1,0 +1,12 @@
+description "Demonstration of basic input events\377";
+
+uses
+	CtrlLib;
+
+file
+	Events.cpp;
+
+mainconfig
+	"" = "GUI",
+	"" = "GUI X11";
+

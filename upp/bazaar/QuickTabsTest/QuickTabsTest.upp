@@ -1,0 +1,20 @@
+description "Bazzar: Quick tabs test. Author: Daniel Kos (unodgs)";
+
+flags
+	QUICKTABS_TEST;
+
+uses
+	CtrlLib,
+	TabBar;
+
+file
+	QuickTabs.h,
+	QuickTabs.cpp,
+	FileTabs.cpp,
+	QuickTabsTest.h,
+	QuickTabsTest.cpp,
+	QuickTabsTest.lay;
+
+mainconfig
+	"" = "GUI";
+

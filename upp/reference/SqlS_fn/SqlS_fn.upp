@@ -1,0 +1,13 @@
+description "Demonstrates utility functions of S_ structures\377";
+
+uses
+	Core,
+	Sql;
+
+file
+	Schema.sch,
+	main.cpp;
+
+mainconfig
+	"" = "";
+

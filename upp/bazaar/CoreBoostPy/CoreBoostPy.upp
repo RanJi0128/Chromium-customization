@@ -1,0 +1,19 @@
+uses
+	Core,
+	Py;
+
+file
+	Common.h,
+	Misc.h,
+	Misc.cpp,
+	Callback.h,
+	Callback.cpp,
+	GTypes.h,
+	GTypes.cpp,
+	String.h,
+	String.cpp,
+	Value.h,
+	Value.cpp,
+	CoreBoostPy.h,
+	CoreBoostPy.cpp;
+

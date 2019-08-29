@@ -1,0 +1,32 @@
+description "Tests to test UnitTest++ (used by authors to develop the library itself)\377";
+
+uses
+	Core,
+	UnitTest++;
+
+file
+	src readonly separator,
+	UnitTestTest.cpp,
+	RecordingReporter.h,
+	TestAssertHandler.cpp,
+	TestCheckMacros.cpp,
+	TestChecks.cpp,
+	TestDeferredTestReporter.cpp,
+	TestMemoryOutStream.cpp,
+	TestTest.cpp,
+	TestTestList.cpp,
+	TestTestMacros.cpp,
+	TestTestResults.cpp,
+	TestTestRunner.cpp,
+	TestTestSuite.cpp,
+	TestTimeConstraint.cpp,
+	TestTimeConstraintMacro.cpp,
+	TestUnitTest++.cpp,
+	TestXmlTestReporter.cpp,
+	docs readonly separator,
+	COPYING,
+	README;
+
+mainconfig
+	"" = "";
+

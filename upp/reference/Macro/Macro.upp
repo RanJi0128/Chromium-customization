@@ -1,0 +1,14 @@
+description "Examples of using macros in TheIDE\377";
+
+uses
+	Core;
+
+file
+	Macro.cpp,
+	Macro.usc,
+	Func.usc,
+	example.txt;
+
+mainconfig
+	"" = "";
+

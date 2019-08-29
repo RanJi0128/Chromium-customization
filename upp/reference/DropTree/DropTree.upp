@@ -1,0 +1,11 @@
+description "DropTree example\377";
+
+uses
+	CtrlLib;
+
+file
+	main.cpp;
+
+mainconfig
+	"" = "GUI";
+

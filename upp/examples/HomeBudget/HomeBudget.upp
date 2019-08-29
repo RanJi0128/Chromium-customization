@@ -1,0 +1,24 @@
+description "Demonstrates using of GridCtrl and Sqlite3 database\377";
+
+charset "UTF-8";
+
+uses
+	CtrlLib,
+	plugin\sqlite3,
+	GridCtrl,
+	DropGrid;
+
+file
+	HomeBudget.h,
+	HomeBudget.cpp,
+	HomeBudget.sch,
+	HomeBudget.t,
+	HomeBudget.iml,
+	HomeBudget.lay,
+	src.tpp,
+	help.tpp;
+
+mainconfig
+	"" = "GUI",
+	"" = "GUI .NOGTK";
+

@@ -1,0 +1,13 @@
+uses
+	Geom;
+
+file
+	GeomCoords.h,
+	util.cpp charset "UTF-8",
+	ellipsoid.cpp,
+	coords.cpp,
+	method.h,
+	method.cpp,
+	Info readonly separator,
+	Copying;
+

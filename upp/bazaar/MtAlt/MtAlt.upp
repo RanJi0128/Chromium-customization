@@ -1,0 +1,9 @@
+description "Alternative multithreading by Pavel Ostapenko\377";
+
+uses
+	Core;
+
+file
+	MtAlt.cpp,
+	MtAlt.h;
+

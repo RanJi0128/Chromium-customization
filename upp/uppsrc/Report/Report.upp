@@ -1,0 +1,14 @@
+description "Preview and printing of reports\377";
+
+uses
+	CtrlLib,
+	RichText;
+
+file
+	Report.h options(BUILDER_OPTION) PCH,
+	Report.cpp,
+	ReportDlg.cpp,
+	Report.lay,
+	Report.t charset "UTF-8",
+	srcdoc.tpp;
+

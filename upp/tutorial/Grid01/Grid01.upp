@@ -1,0 +1,12 @@
+description "Basics\377";
+
+uses
+	CtrlLib,
+	GridCtrl;
+
+file
+	main.cpp;
+
+mainconfig
+	"" = "GUI";
+

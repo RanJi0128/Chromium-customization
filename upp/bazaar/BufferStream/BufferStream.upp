@@ -1,0 +1,10 @@
+description "A Vector<byte> based selfgrowing Stream\377";
+
+uses
+	Core;
+
+file
+	BufferStream.h,
+	BufferStream.cpp,
+	src.tpp;
+

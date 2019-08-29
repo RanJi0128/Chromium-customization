@@ -1,0 +1,125 @@
+to make python work in upp there are few steps to do..
+
+WINDOWS
+
+go to the python page 
+http://www.python.org/getit/
+
+and choose the installer for windows, version 2.7.1 is good and current.
+linux should have python 2.7.1 already shipped.
+
+the windows installer will put it in 'C:\Python27' folder
+
+setup your build method for windows to add to PATH:
+C:\Python27
+to INCLUDE
+C:\Python27\include
+to LIB
+C:\Python27\
+C:\Python27\libs
+C:\Python27\DLLs
+
+again, linux should already have python available from start.
+for more linux info see below.
+
+make sure NOT to choose DEBUG compile, since it will fail. the reason:
+python27 headers need some more functions in debug mode, which are not provided in release lib.
+but the Upp Python package is ready to be used as DEBUG as well. if needed, read on.
+
+COMPILING IN THE IDE
+python only applications (without BOOSTPY flag) can compile with MSC and GCC
+in debug with all shared and with BLITZ. release should work with MSC without BLITZ.
+(both debug and release with all configs, static, shared libs and allshared)
+BOOTSPY: boost demands the use of shared libs. boostpro precompiled libs are MSC only.
+
+DEBUG:
+debug is needed, when you need to debug at least *your* application. so you will need
+the target library for DEBUG, named python27_d.dll / python27_d.so respectively.
+
+for linux, download the python debug package which should be available for your distro
+or recompile it from source with the needed flags for configure.
+
+for windows you will need to compile it from source, because, it is not provided in installation.
+download the sources at same location or directly
+http://www.python.org/ftp/python/2.7.1/Python-2.7.1.tgz
+extract and move the Python-2.7.1 folder with the sources to C:\
+
+go to C:\Python-2.7.1\PCbuild
+and open the pcbuild.sln with VisualStudio 2008, or express, should do as well.
+do a 'build solution', which will fail in some packages, ssl and the like. no matter..
+
+PCbuild folder will contain the files
+	python27_d.dll
+	python27_d.lib
+	python27_d.pdb
+	python27_d.exp
+
+copy the dll to C:\Python27
+and the remaining 3 files to C:\Python27\libs
+
+this should enable you to compile your app as DEBUG..
+
+to further information visit:
+http://wiki.python.org/moin/Building%20Python%20with%20the%20free%20MS%20C%20Toolkit
+http://timgolden.me.uk/python/win32_how_do_i.html
+http://docs.python.org/using/windows.html
+http://www.boost.org/doc/libs/1_46_1/libs/python/doc/building.html
+
+NOTE:
+for shorthand, use the provided precompiled python27_d
+
+NOTE:
+normally, it should be enough to set all the paths and no need to specify the libs to link
+in the package organizer. but in conjungtion with python boost lib it crashes in quite arbitrary
+parts. also, the boost python headers need to go first, before any upp stuff, since it defines
+and uses the t_ macro. which should be considered changing in upp in the future.
+
+NOTE:
+#include <Py/Py.h> and all deriving/dependant packages
+should always go first in every dependency include
+since it has some defines that should be processed before Core
+
+SIDENOTE:
+_Py_NoneStruct reference errors when linking result due to Py_ENABLE_SHARED beeing undefined in pyport.h
+
+BOOST:
+Py package is prepared to be used with Boost Python, just add BOOSTPY to your compile configuration
+
+Boost Installation:
+esiest way is to download the boostpro installer
+http://www.boostpro.com/download/
+selct during installation MSC9 derivates (or respective your compiler) and, best, all the variants, shared, multi threaded, etc.
+enhance your build method paths
+PATH: C:\Prpgram Files\boost\boost_1_46_1\bin and C:\Prpgram Files\boost\boost_1_46_1\lib
+INCLUDE C:\Prpgram Files\boost\boost_1_46_1
+LIB: C:\Prpgram Files\boost\boost_1_46_1\lib
+Boostpro provides only MSC compiled libs. gcc/mingw compiled libs have to be generated manually.
+see the build procedure at boost.org
+
+BOOST CAVEAT
+see point 8 at
+http://www.boost.org/doc/libs/1_46_1/libs/python/doc/building.html
+the boost libraries from boostpro come with release and debug variants linked to python27.dll both
+(the debug should theoretically be linked to python27_d)
+when compiling release, all is fine, but compiling debug can render the executable unusable,
+since it loads both python27.dll through the boost.python lib, and the python27_d.dll through
+the pragma comment(lib,) which results in mixed inits and crashes/access violations.
+not even the BOOST_DEBUG_PYTHON define seems to help here, since it seems to be provided
+during build of the boost python libs to instruct them proper linkage.
+
+thats why it is the esiest way to control manually, which lib is going to be included manually.
+#define MS_NO_COREDLL 1
+#define Py_ENABLE_SHARED 1
+are to disable the pragma comment(lib,) stuff so we manually can specify the libs while preserving all shared stuff.
+
+LINUX
+
+there is so far no easy way to make linkage easy in linux. but you should be familiar 
+with the compile/link process in linux anyway. in pakcage configuration 
+add the respective lib, i.e. 'python2.7'. static linking stuff is found in /usr/lib/python/config, typically.
+do not compile all static, this does'nt work well, it will need a lot other satic dependencies, like gtk.
+boost will also require you to build shared or all shared.
+you definitely will need to add '/usr/include/python' to your include paths in the build method.
+boost will complain, if not.
+
+boost will need to add the 'boost_python' lib or 'boost_python-mt' lib for MT compile,

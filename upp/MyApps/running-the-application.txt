@@ -1,0 +1,2 @@
+to run the application Unzip CEFlib.rar to where the .exe file is. Usually 
+C:\upp\out\MyApps\MINGW.Debug.Debug_Full.Gui.Noblitz 

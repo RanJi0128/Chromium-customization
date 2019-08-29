@@ -1,0 +1,16 @@
+description "Tray application that reminds user to take care about his eyes\377";
+
+uses
+	CtrlLib;
+
+file
+	EyeCare.h,
+	EyeCare.cpp,
+	icon.rc,
+	EyeCare.lay,
+	EyeCare.iml,
+	app.tpp;
+
+mainconfig
+	"" = "GUI";
+

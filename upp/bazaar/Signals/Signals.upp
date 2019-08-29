@@ -1,0 +1,9 @@
+description "Package to handle Posix signala\377";
+
+uses
+	CtrlCore;
+
+file
+	Signals.h,
+	Signals.cpp;
+

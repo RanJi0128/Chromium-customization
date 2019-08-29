@@ -1,0 +1,10 @@
+uses
+	Core,
+	LogCtrl,
+	Py;
+
+file
+	PyCon.h,
+	PyCon.cpp,
+	infos.txt;
+

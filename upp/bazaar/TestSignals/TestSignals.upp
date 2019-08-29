@@ -1,0 +1,14 @@
+description "Test app for signals package\377";
+
+uses
+	CtrlLib,
+	Signals;
+
+file
+	TestSignals.h,
+	main.cpp,
+	TestSignals.lay;
+
+mainconfig
+	"" = "GUI";
+

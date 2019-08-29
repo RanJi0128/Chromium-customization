@@ -1,0 +1,17 @@
+uses
+	CtrlLib,
+	PixRaster,
+	PixRasterCtrl;
+
+file
+	TestLeptonica.lay,
+	TestLeptonica.h,
+	LineRemoval.cpp,
+	PageLayout.cpp,
+	BaseLine.cpp,
+	PageMarkers.cpp,
+	main.cpp;
+
+mainconfig
+	"" = "GUI";
+

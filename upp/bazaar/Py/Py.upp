@@ -1,0 +1,21 @@
+uses
+	Core;
+
+library(MSC BOOSTPY) python27;
+
+library(MSC !BOOSTPY !DEBUG) python27;
+
+library(MSC !BOOSTPY DEBUG) python27_d;
+
+library(LINUX) python2.7;
+
+library(LINUX BOOSTPY MT) boost_python-mt;
+
+library(LINUX BOOSTPY !MT) boost_python;
+
+file
+	Py.h,
+	init.icpp,
+	Py.cpp,
+	install.txt;
+

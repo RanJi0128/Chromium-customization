@@ -1,0 +1,10 @@
+description "Timer queue, usable without CtrlCore\377";
+
+uses
+	Core;
+
+file
+	Timer.h,
+	Timer.cpp,
+	srcdoc.tpp;
+

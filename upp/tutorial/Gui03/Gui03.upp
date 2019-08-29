@@ -1,0 +1,11 @@
+description "Modifying TopWindow properties\377";
+
+uses
+	CtrlLib;
+
+file
+	main.cpp;
+
+mainconfig
+	"" = "GUI";
+

@@ -1,0 +1,20 @@
+description "Tiny C Compiler wrapper\377B255,170,0";
+
+uses
+	Core;
+
+uses(CLANG | GCC) plugin/tcc;
+
+options(POSIX) -DLIBTCC;
+
+options(WIN32) "-DTCC_TARGET_PE -DLIBTCC";
+
+file
+	Tcc.cpp,
+	Tcc.h,
+	Tcc.t,
+	srcdoc.tpp,
+	srcimp.tpp,
+	src.tpp,
+	License.txt;
+

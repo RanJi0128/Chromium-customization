@@ -1,0 +1,29 @@
+description "Outlook interface through Extended MAPI\377B255,170,0";
+
+uses
+	Core,
+	Functions4U;
+
+library(WIN32) mapi32;
+
+file
+	MAPIAppointment.cpp,
+	MAPIAppointment.h,
+	MAPIAttachment.cpp,
+	MAPIAttachment.h,
+	MAPIContact.cpp,
+	MAPIContact.h,
+	MAPIEx.cpp,
+	MAPIEx.h,
+	MAPIFolder.cpp,
+	MAPIFolder.h,
+	MAPIMessage.cpp,
+	MAPIMessage.h,
+	MAPIObject.cpp,
+	MAPIObject.h,
+	MAPISink.cpp,
+	MAPISink.h,
+	srcdoc.tpp,
+	src.tpp,
+	Copying;
+

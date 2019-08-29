@@ -1,0 +1,15 @@
+description "Various small(er) designers (Image viewer, QTF editor, ...)\377B";
+
+uses
+	HexView;
+
+file
+	Designers.h,
+	Png.cpp,
+	Img.cpp,
+	Qtf.cpp,
+	HexView.cpp,
+	TreeDes.cpp,
+	Xml.cpp,
+	Json.cpp;
+

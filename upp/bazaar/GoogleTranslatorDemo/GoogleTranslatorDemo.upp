@@ -1,0 +1,25 @@
+description "HTTP Google Translator! Translate text direct form internet, uses post method!Max lenght is 32kb\377";
+
+noblitz;
+
+uses
+	CtrlLib,
+	GoogleTranslator;
+
+file
+	main.h,
+	NeedAdd.h,
+	NeedAdd.cpp,
+	GlobalShortCut.cpp,
+	GlobalShortCut.h,
+	main.cpp charset "UTF-8",
+	MainMenu.cpp,
+	TrayMenu.cpp,
+	GoogleTranslatorDemo.rc,
+	GoogleTranslatorDemo.iml,
+	GoogleTranslatorDemo.lay,
+	app.tpp;
+
+mainconfig
+	"" = "GUI MT";
+

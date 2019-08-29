@@ -1,0 +1,12 @@
+description "Visual style for ToolBar and MenuBar\377";
+
+uses
+	CtrlLib;
+
+file
+	BlueBar.h,
+	BlueSkin.iml,
+	BlueSkin.cpp,
+	Info readonly separator,
+	Copying;
+

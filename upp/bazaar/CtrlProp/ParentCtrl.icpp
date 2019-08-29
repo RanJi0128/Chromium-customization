@@ -1,0 +1,10 @@
+#include "CtrlPropCommon.h"
+
+NAMESPACE_UPP
+
+PROPERTIES(ParentCtrl, Ctrl)
+END_PROPERTIES
+
+PROPS(Ctrl, ParentCtrl, Ctrl)
+
+END_UPP_NAMESPACE

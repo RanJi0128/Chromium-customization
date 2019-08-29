@@ -1,0 +1,11 @@
+description "Formatting Strings\377";
+
+uses
+	Core;
+
+file
+	Format.cpp;
+
+mainconfig
+	"" = "";
+

@@ -1,0 +1,12 @@
+description "a generic object dispatcher class\377";
+
+uses
+	Core,
+	Gen;
+
+file
+	Dispatcher.h,
+	Dispatcher.hpp,
+	Dispatcher.cpp,
+	src.tpp;
+

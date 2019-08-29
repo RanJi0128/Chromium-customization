@@ -1,0 +1,21 @@
+description "SDL in an U++ control\377";
+
+uses
+	Core,
+	CtrlLib;
+
+library(WIN32) SDL;
+
+library(LINUX) SDL;
+
+library(FREEBSD) "SDL SDLmain X11 Xext Xrandr Xrender vga vgl aa usbhid ncurses";
+
+file
+	SDLCtrl.cpp,
+	SDLCtrl.h,
+	SDLCtrl.usc,
+	SDLCtrl.iml,
+	SDLSurface.cpp,
+	SDLWrapper.h,
+	srcdoc.tpp;
+

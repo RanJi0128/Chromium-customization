@@ -1,0 +1,17 @@
+description "Examples of SqlExp expressions\377";
+
+uses
+	Core,
+	Sql,
+	RichText,
+	CtrlLib,
+	RichEdit;
+
+file
+	SqlExp.sch,
+	SqlExp.cpp;
+
+mainconfig
+	"" = "GUI",
+	"" = "GUI QTF";
+

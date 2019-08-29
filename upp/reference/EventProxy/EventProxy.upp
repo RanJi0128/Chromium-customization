@@ -1,0 +1,11 @@
+description "Callback to Callback\377";
+
+uses
+	Core;
+
+file
+	CallbackProxy.cpp;
+
+mainconfig
+	"" = "";
+

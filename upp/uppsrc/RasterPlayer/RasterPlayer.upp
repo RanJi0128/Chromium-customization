@@ -1,0 +1,14 @@
+description "Control to show animated GIF and multipage TIFF files\377";
+
+uses
+	plugin\gif,
+	plugin\tif;
+
+file
+	RasterPlayer.cpp,
+	RasterPlayer.h,
+	RasterPlayer.iml,
+	RasterPlayer.usc,
+	Credits.txt,
+	src.tpp;
+

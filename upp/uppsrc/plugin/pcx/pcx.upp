@@ -1,0 +1,8 @@
+description "PCX image file format support\3770,128,128";
+
+file
+	pcx.h,
+	pcxhdr.h,
+	pcx.cpp,
+	pcxreg.icpp;
+

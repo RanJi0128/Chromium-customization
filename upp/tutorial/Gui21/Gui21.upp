@@ -1,0 +1,13 @@
+description "Creating and using custom widgets\377";
+
+uses
+	CtrlLib;
+
+file
+	main.cpp,
+	gui21.usc,
+	Gui21.lay;
+
+mainconfig
+	"" = "GUI";
+

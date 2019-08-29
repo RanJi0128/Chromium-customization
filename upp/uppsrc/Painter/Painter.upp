@@ -1,0 +1,47 @@
+description "2D software rendering with PDF/SVG strength\377B85,85,150";
+
+uses
+	Draw;
+
+file
+	Painter.h options(BUILDER_OPTION) PCH,
+	Painter.hpp,
+	Painter.cpp,
+	SvgArc.cpp,
+	PainterPath.cpp,
+	DrawOp.cpp,
+	Painting.h,
+	Painting.cpp,
+	PaintPainting.cpp,
+	PainterInit.icpp,
+	BufferPainter.h,
+	Interpolator.hpp,
+	Xform2D.cpp,
+	Approximate.cpp,
+	Stroker.cpp,
+	Dasher.cpp,
+	Transformer.cpp,
+	Rasterizer.cpp,
+	RasterizerClip.cpp,
+	Path.cpp,
+	Context.cpp,
+	Fillers.h,
+	Fillers.cpp,
+	RenderChar.cpp,
+	Render.cpp,
+	Image.cpp,
+	Mask.cpp,
+	Gradient.cpp,
+	RadialGradient.cpp,
+	OnPath.cpp,
+	SVG readonly separator,
+	SvgInternal.h,
+	SvgUtil.cpp,
+	SvgBounds.cpp,
+	SvgStyle.cpp,
+	SvgParser.cpp,
+	srcimp.tpp,
+	Info readonly separator,
+	Copying,
+	src.tpp;
+

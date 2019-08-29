@@ -1,0 +1,13 @@
+description "Gui password frontend for SysExec package\377";
+
+uses
+	CtrlLib,
+	SysExec;
+
+file
+	SysExecGui.t,
+	SysExecGui.iml,
+	SysExecGui.lay,
+	SysExecGui.h,
+	SysExecGui.cpp;
+

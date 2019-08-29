@@ -1,0 +1,17 @@
+uses
+	CtrlLib,
+	plugin\jpg,
+	Controls4U;
+
+library(WIN32) opencv_world341.lib;
+
+library(!WIN32) "libopencv_core.so libopencv_highgui.so libopencv_calib3d.so libopencv_features2d.so libopencv_imgproc.so libopencv_video.so";
+
+file
+	OpenCV.cpp,
+	OpenCV.h,
+	srcdoc.tpp;
+
+mainconfig
+	"" = "GUI";
+

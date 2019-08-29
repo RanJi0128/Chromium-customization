@@ -1,0 +1,12 @@
+description "Window that accepts drag&drop of files\377";
+
+uses
+	CtrlLib;
+
+file
+	main.cpp;
+
+mainconfig
+	"" = "GUI",
+	"" = "GUI X11";
+

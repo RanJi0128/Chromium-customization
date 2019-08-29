@@ -1,0 +1,12 @@
+description "Adding images\377";
+
+uses
+	CtrlLib;
+
+file
+	main.cpp,
+	images.iml;
+
+mainconfig
+	"" = "GUI";
+

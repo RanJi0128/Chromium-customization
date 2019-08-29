@@ -1,0 +1,17 @@
+description "Including binary data into application\377";
+
+uses
+	Core,
+	plugin\bz2,
+	plugin/lzma,
+	plugin/lz4,
+	plugin/zstd;
+
+file
+	bin.cpp,
+	bin.brc
+		depends() bin.cpp;
+
+mainconfig
+	"" = "";
+

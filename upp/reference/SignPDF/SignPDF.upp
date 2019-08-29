@@ -1,0 +1,16 @@
+description "Adding digital signature to the PDF file\377";
+
+uses
+	Core,
+	PdfDraw,
+	Core/SSL,
+	RichText;
+
+file
+	SignPDF.cpp,
+	certificate.pem,
+	privatekey.pem;
+
+mainconfig
+	"" = "";
+

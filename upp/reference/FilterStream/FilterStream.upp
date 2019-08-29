@@ -1,0 +1,11 @@
+description "Demonstrates usage of InFilterStream and OutFilterStream for compression\377";
+
+uses
+	Core;
+
+file
+	FilterStream.cpp;
+
+mainconfig
+	"" = "";
+

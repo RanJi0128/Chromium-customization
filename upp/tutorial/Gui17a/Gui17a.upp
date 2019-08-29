@@ -1,0 +1,11 @@
+description "Value of widget\377";
+
+uses
+	CtrlLib;
+
+file
+	main.cpp;
+
+mainconfig
+	"" = "GUI";
+

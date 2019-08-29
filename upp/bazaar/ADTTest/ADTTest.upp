@@ -1,0 +1,11 @@
+description "Abstract Data Types\377";
+
+uses
+	ADT;
+
+file
+	main.cpp;
+
+mainconfig
+	"" = "";
+

@@ -1,0 +1,5 @@
+#!/c/mingw710/x86_64-710-win32-seh-rt_v5-rev2/mingw64/opt/bin/python2.7.exe
+import sys
+from lib2to3.main import main
+
+sys.exit(main("lib2to3.fixes"))

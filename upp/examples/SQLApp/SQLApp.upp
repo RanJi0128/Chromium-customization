@@ -1,0 +1,19 @@
+description "SQL application example\377";
+
+uses
+	CtrlLib,
+	plugin\sqlite3,
+	SqlCtrl;
+
+file
+	SQLApp.h,
+	SQLApp.sch,
+	query.cpp,
+	book.cpp,
+	borrow.cpp,
+	main.cpp,
+	SQLApp.lay;
+
+mainconfig
+	"" = "GUI";
+

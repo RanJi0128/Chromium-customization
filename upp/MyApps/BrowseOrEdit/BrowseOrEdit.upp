@@ -1,0 +1,23 @@
+description "BrowseOrEdit (browser with editor) application\377";
+
+uses
+	CtrlLib,
+	PdfDraw,
+	plugin\jpg,
+	BrowseEdit;
+
+library
+	libcef.lib;
+
+file
+	Link-CSS-sample.lay,
+	BrowseOrEdit.cpp,
+	BrowseEdit.iml,
+	BrowseEdit.h,
+	libcef.h,
+	Tool.cpp,
+	PDF.iml;
+
+mainconfig
+	"" = "GUI";
+

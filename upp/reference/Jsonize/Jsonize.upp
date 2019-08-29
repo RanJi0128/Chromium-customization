@@ -1,0 +1,11 @@
+description "Json based object persistency\377";
+
+uses
+	Core;
+
+file
+	Jsonize.cpp;
+
+mainconfig
+	"" = "";
+

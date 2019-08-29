@@ -1,0 +1,11 @@
+description "Animated Hello world example\377";
+
+uses
+	CtrlLib;
+
+file
+	Hello.cpp;
+
+mainconfig
+	"" = "GUI";
+

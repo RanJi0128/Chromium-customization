@@ -1,0 +1,12 @@
+uses
+	Draw,
+	Painter,
+	plugin/glew;
+
+file
+	GLDraw.h,
+	Texture.cpp,
+	GLDraw.cpp,
+	GLShaders.cpp,
+	GLDrawS.cpp;
+

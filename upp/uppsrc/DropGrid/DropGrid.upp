@@ -1,0 +1,11 @@
+description "DropGrid\377";
+
+uses
+	CtrlLib,
+	GridCtrl;
+
+file
+	DropGrid.h,
+	DropGrid.cpp,
+	DropGrid.usc;
+

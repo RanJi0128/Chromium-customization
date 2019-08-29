@@ -1,0 +1,23 @@
+description "Simple SVG viewer (PainterSvg demo)\377";
+
+uses
+	CtrlLib,
+	plugin\tif,
+	plugin\jpg,
+	plugin\gif,
+	Painter;
+
+file
+	main.cpp,
+	SVG readonly separator,
+	svg\altum_angelfish_01.svg,
+	svg\brown_fish_01.svg,
+	svg\matrix.svg,
+	svg\anne.svg,
+	svg\tux.svg,
+	svg\rg1024_Presentation_with_girl.svg,
+	svg\yinyang.svg;
+
+mainconfig
+	"" = "GUI";
+

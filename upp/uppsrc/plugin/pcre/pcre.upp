@@ -1,0 +1,17 @@
+description "PCRE regular expressions library\3770,128,128";
+
+noblitz;
+
+options(BUILDER_OPTION) NOWARNINGS;
+
+uses
+	Core;
+
+file
+	Pcre.h,
+	RegExp.h,
+	RegExp.cpp,
+	lib/config.h,
+	lib.cpp,
+	Copying;
+

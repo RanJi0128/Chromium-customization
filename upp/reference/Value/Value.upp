@@ -1,0 +1,11 @@
+description "Using Value to store any data\377";
+
+uses
+	Core;
+
+file
+	Value.cpp;
+
+mainconfig
+	"" = "";
+

@@ -1,0 +1,11 @@
+description "Using CParser for simple expression evaluator\377";
+
+uses
+	Core;
+
+file
+	main.cpp;
+
+mainconfig
+	"" = "";
+

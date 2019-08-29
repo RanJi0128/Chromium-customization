@@ -1,0 +1,40 @@
+description "Disassembler\3770,128,128";
+
+options(BUILDER_OPTION) NOWARNINGS;
+
+uses
+	Core;
+
+file
+	ndisasm.h,
+	ndisupp.cpp,
+	lib/ndisasm readonly separator,
+	lib\Authors,
+	lib\compiler.h,
+	lib\disasm.c,
+	lib\disasm.h,
+	lib\exprlib.c,
+	lib\insns.h,
+	lib\insnsb.c,
+	lib\insnsd.c,
+	lib\insnsi.h,
+	lib\insnsn.c,
+	lib\inttypes.h,
+	lib\LICENSE,
+	lib\opflags.h,
+	lib\nasm.h,
+	lib\nasmlib.c,
+	lib\nasmlib.h,
+	lib\README,
+	lib\regdis.c,
+	lib\regdis.h,
+	lib\regs.c,
+	lib\regs.h,
+	lib\snprintf.c,
+	lib\strfunc.c,
+	lib\sync.c,
+	lib\sync.h,
+	lib\version,
+	lib\version.h,
+	Copying;
+

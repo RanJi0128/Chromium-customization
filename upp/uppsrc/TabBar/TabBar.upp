@@ -1,0 +1,15 @@
+description "Generic tab frame. Authors: Daniel Kos (unodgs), James Thomas (mrtj)\377";
+
+uses
+	CtrlLib;
+
+file
+	TabBar.h,
+	TabBar.cpp,
+	FileTabs.h,
+	FileTabs.cpp,
+	TabBar.iml,
+	TabBarCtrl.h,
+	TabBarCtrl.cpp,
+	TabBar.t;
+

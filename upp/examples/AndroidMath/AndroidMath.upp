@@ -1,0 +1,24 @@
+description "Android builder juicy example\377";
+
+uses
+	AndroidMathUtility;
+
+library
+	log;
+
+file
+	MemoryManager readonly separator,
+	MemoryManager.h,
+	Native readonly separator,
+	AndroidMath.cpp,
+	Vector.cpp,
+	Math readonly separator,
+	Vector.java,
+	AndroidMath.java,
+	Runtime readonly separator,
+	AndroidManifest.xml,
+	AndroidMathActivity.java;
+
+mainconfig
+	"" = "";
+

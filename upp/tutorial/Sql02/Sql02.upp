@@ -1,0 +1,12 @@
+description "Using global main database, executing statements with parameters, getting resultset info\377";
+
+uses
+	Core,
+	plugin\sqlite3;
+
+file
+	main.cpp;
+
+mainconfig
+	"" = "";
+

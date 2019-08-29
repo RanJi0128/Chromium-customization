@@ -1,0 +1,24 @@
+uses
+	Sound,
+	CtrlLib,
+	plugin/wav;
+
+file
+	SoundExample.h,
+	main.cpp,
+	Blocking.h,
+	Info.h,
+	Wave.h,
+	Record.h,
+	Wav.h,
+	SoundExample.iml,
+	SoundExample.lay,
+	notes.txt;
+
+mainconfig
+	"" = "GUI",
+	"" = "GUI .ALSA .OSS",
+	"" = "GUI .JACK",
+	"" = "GUI .WMME",
+	"" = "GUI .WASAPI";
+

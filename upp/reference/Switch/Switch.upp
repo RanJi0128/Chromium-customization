@@ -1,0 +1,12 @@
+description "Demonstrates Switch widget\377";
+
+uses
+	CtrlLib;
+
+file
+	switch.lay,
+	main.cpp;
+
+mainconfig
+	"" = "GUI";
+

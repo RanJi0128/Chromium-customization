@@ -1,0 +1,12 @@
+description "Demonstrates OptionBox\377";
+
+uses
+	CtrlLib;
+
+file
+	main.cpp,
+	test.lay;
+
+mainconfig
+	"" = "GUI";
+

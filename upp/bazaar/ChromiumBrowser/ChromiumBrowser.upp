@@ -1,0 +1,26 @@
+description "Chromium Embedded Framework control\377";
+
+charset "UTF-8";
+
+noblitz;
+
+uses
+	CtrlLib;
+
+library(LINUX) "libcef.so cef_dll_wrapper";
+
+library(WIN32) "libcef.lib libcef_dll_wrapper.lib";
+
+options(GCC) -std=c++11;
+
+file
+	ChromiumBrowser.iml,
+	ChromiumBrowser.usc,
+	ChromiumBrowser.h,
+	ChromiumBrowser.cpp,
+	ClientApp.h,
+	ClientApp.cpp,
+	ClientHandler.h,
+	ClientHandler.cpp,
+	src.tpp;
+

@@ -1,0 +1,43 @@
+description "TheIDE - builders - routines to compile programs\377B";
+
+noblitz;
+
+uses
+	ide\Core,
+	ide/Android,
+	ide/Java,
+	ide/Android;
+
+file
+	Builders.h options(BUILDER_OPTION) PCH,
+	CppBuilder.cpp,
+	MakeFile.cpp,
+	coff.h,
+	Builders readonly separator,
+	GccBuilder.cpp,
+	MscBuilder.cpp,
+	JavaBuilder.cpp,
+	ScriptBuilder.cpp,
+	Android readonly separator,
+	Android.h,
+	AndroidProject.cpp,
+	AndroidApplicationMakeFile.cpp,
+	AndroidMakeFile.cpp,
+	AndroidModuleMakeFile.cpp,
+	"Android Builder" readonly separator,
+	AndroidBuilder.h,
+	AndroidBuilder.cpp,
+	AndroidBuilderCommands.cpp,
+	AndroidBuilderUtils.cpp,
+	AndroidModuleMakeFileBuilder.cpp,
+	Components readonly separator,
+	BuilderComponents.h,
+	Blitz.cpp,
+	Build.h,
+	Build.cpp,
+	Helpers readonly separator,
+	BuilderUtils.h,
+	BuilderUtils.cpp,
+	Info readonly separator,
+	Copying;
+

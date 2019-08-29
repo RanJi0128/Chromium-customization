@@ -1,0 +1,11 @@
+description "Profiling helpers\377";
+
+uses
+	Core;
+
+file
+	main.cpp;
+
+mainconfig
+	"" = "";
+

@@ -1,0 +1,9 @@
+LAYOUT(RichFindReplaceLayout, 264, 80)
+	ITEM(Label, dv___0, SetLabel(t_("&Find:")).LeftPosZ(4, 46).TopPosZ(4, 19))
+	ITEM(WithDropChoice<EditString>, find, HSizePosZ(50, 4).TopPosZ(4, 19))
+	ITEM(Option, upward, SetLabel(t_("&Upward")).LeftPosZ(4, 256).TopPosZ(36, 18))
+	ITEM(Option, ignorecase, SetLabel(t_("&Ignore case")).LeftPosZ(4, 256).TopPosZ(56, 18))
+	ITEM(Button, ok, SetLabel(t_("Find")).RightPosZ(84, 64).BottomPosZ(8, 24))
+	ITEM(Button, cancel, SetLabel(t_("Cancel")).RightPosZ(8, 64).BottomPosZ(8, 24))
+END_LAYOUT
+

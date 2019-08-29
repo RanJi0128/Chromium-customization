@@ -1,0 +1,14 @@
+description "\3770,128,128";
+
+uses
+	Core;
+
+file
+	lz4.h,
+	Compress.cpp,
+	Decompress.cpp,
+	util.cpp,
+	lib\LICENSE,
+	Copying,
+	src.tpp;
+

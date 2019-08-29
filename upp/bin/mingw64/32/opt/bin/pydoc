@@ -1,0 +1,5 @@
+#!/c/mingw710/i686-710-win32-dwarf-rt_v5-rev2/mingw32/opt/bin/python2.7.exe
+
+import pydoc
+if __name__ == '__main__':
+    pydoc.cli()

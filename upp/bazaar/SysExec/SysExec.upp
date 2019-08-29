@@ -1,0 +1,19 @@
+description "BAZAAR : Execution of external commands gathering output - Author : Massimo Del Fedele - EMail : max@veneto.com\377";
+
+uses
+	Core;
+
+library(LINUX) util;
+
+file
+	SysInfo.h,
+	SysInfo.cpp,
+	ArgEnv.h,
+	ArgEnv.cpp,
+	SudoLib.h,
+	SudoLib.cpp,
+	ShellLib.h,
+	ShellLib.cpp,
+	SysExec.h,
+	SysExec.cpp;
+

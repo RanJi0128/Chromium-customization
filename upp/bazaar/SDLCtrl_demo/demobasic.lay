@@ -1,0 +1,4 @@
+LAYOUT(Basic, 400, 200)
+	ITEM(SDLCtrl, sdlctrl, SetFrame(InsetFrame()).HSizePosZ(4, 4).VSizePosZ(4, 4))
+END_LAYOUT
+

@@ -1,0 +1,12 @@
+description "Demonstrates the use of QTF object in text format\377";
+
+uses
+	CtrlLib,
+	RichEdit;
+
+file
+	main.cpp;
+
+mainconfig
+	"" = "GUI";
+

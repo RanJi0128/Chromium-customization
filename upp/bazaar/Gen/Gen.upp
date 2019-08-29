@@ -1,0 +1,13 @@
+description "collection of some usefull / to-be-descussed interfaces\377";
+
+uses
+	Core;
+
+file
+	Misc.h,
+	VTypes.h,
+	VTypes.cpp,
+	Gen.h,
+	Gen.cpp,
+	src.tpp;
+

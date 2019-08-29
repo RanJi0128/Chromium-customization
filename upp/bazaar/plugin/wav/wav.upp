@@ -1,0 +1,16 @@
+description "\3770,128,128";
+
+uses
+	Sound;
+
+file
+	wav.h,
+	wav.cpp,
+	rifffile.h,
+	rifffile.cpp,
+	wave.h,
+	wave.cpp,
+	docs readonly separator,
+	WAVE.txt,
+	RIFFFile.txt;
+

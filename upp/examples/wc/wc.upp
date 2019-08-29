@@ -1,0 +1,13 @@
+description "Word-count utility\377";
+
+uses
+	Core;
+
+file
+	wc.cpp;
+
+mainconfig
+	"" = "",
+	"" = "USEMALLOC",
+	"" = "MT";
+

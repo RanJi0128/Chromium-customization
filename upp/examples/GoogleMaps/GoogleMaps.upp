@@ -1,0 +1,16 @@
+description "Example using GoogleMaps static API to display the map of given location\377";
+
+uses
+	CtrlLib;
+
+file
+	GoogleMaps.h,
+	GoogleMaps.cpp,
+	MapDlg.cpp,
+	GoogleMaps.lay,
+	GoogleMaps.iml,
+	Main.cpp;
+
+mainconfig
+	"" = "GUI";
+

@@ -1,0 +1,45 @@
+description "The source files edit, derived from CtrlLib's LineEdit\377";
+
+uses
+	CtrlLib,
+	plugin/pcre;
+
+file
+	CodeEditor.h options(BUILDER_OPTION) PCH,
+	Syntax readonly separator,
+	Syntax.h,
+	hl_color.i,
+	Register.cpp,
+	HighlightOut.cpp,
+	Syntax.cpp,
+	Style.cpp,
+	RegisterSyntax.cpp,
+	CSyntax readonly separator,
+	CSyntax.h,
+	CSyntax.cpp,
+	CInit.cpp,
+	CHighlight.cpp,
+	CLogic.cpp,
+	DiffSyntax readonly separator,
+	DiffSyntax.h,
+	DiffSyntax.cpp,
+	TagSyntax readonly separator,
+	TagSyntax.h,
+	TagSyntax.cpp,
+	PythonSyntax readonly separator,
+	PythonSyntax.cpp,
+	PythonSyntax.h,
+	LogSyntax readonly separator,
+	LogSyntax.h,
+	LogSyntax.cpp,
+	Editor readonly separator,
+	EditorBar.cpp,
+	FindReplace.cpp,
+	Lang.cpp,
+	CodeEditor.cpp,
+	CodeEditor.lay,
+	CodeEditor.iml,
+	CodeEditor.t,
+	Info readonly separator,
+	Copying;
+

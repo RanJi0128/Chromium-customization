@@ -1,0 +1,55 @@
+description "TheIDE - debuggers\377B";
+
+uses
+	ide\Common,
+	HexView;
+
+uses(WIN32) plugin\ndisasm;
+
+library(WIN32 GCC) "dbghelp psapi";
+
+file
+	Debuggers.h options(BUILDER_OPTION) PCH,
+	Debuggers.iml,
+	Gdb.lay,
+	Terminal.cpp,
+	Disas.cpp,
+	GDB readonly separator,
+	GdbCmd.cpp,
+	GdbData.cpp,
+	Gdb.cpp,
+	GDB_MI2 readonly separator,
+	MIValue.h,
+	MIValue.cpp,
+	VarItem.h,
+	VarItem.cpp,
+	TypeSimplify.h,
+	TypeSimplify.cpp,
+	Gdb_MI2.lay,
+	Gdb_MI2.h,
+	Gdb_MI2Explore.cpp,
+	Gdb_MI2Gdb.cpp,
+	Gdb_MI2.cpp,
+	UppSimplifiers.cpp,
+	PDB readonly separator,
+	Pdb.h,
+	cvconst.h,
+	i386.cpu,
+	amd64.cpu,
+	Cpu.cpp,
+	Debug.cpp,
+	Mem.cpp,
+	Sym.cpp,
+	Exp.cpp,
+	Visualise.cpp,
+	Data.cpp,
+	Tree.cpp,
+	Stack.cpp,
+	Code.cpp,
+	Pdb.cpp,
+	Pdb.lay,
+	Pdb.key,
+	Info readonly separator,
+	Copying,
+	app.tpp;
+

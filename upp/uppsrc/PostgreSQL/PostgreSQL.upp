@@ -1,0 +1,19 @@
+acceptflags
+	NOPOSTGRESQL;
+
+uses
+	Sql;
+
+library(WIN32 !NOPOSTGRESQL MSC) libpq;
+
+library(WIN32 !NOPOSTGRESQL GCC) pq;
+
+library(POSIX !NOPOSTGRESQL) pq;
+
+file
+	PostgreSQL.h,
+	PostgreSQLSchema.h,
+	PostgreSQL.cpp,
+	Info readonly separator,
+	Copying;
+

@@ -1,0 +1,11 @@
+description "Sorting columns in ArrayCtrl\377";
+
+uses
+	CtrlLib;
+
+file
+	main.cpp;
+
+mainconfig
+	"" = "GUI";
+

@@ -1,0 +1,14 @@
+description "Tree Test package, a Tree Container template based on Array container\377";
+
+uses
+	CtrlLib,
+	Tree;
+
+file
+	TreeTest.h,
+	main.cpp,
+	TreeTest.lay;
+
+mainconfig
+	"" = "GUI";
+

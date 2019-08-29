@@ -1,0 +1,11 @@
+description "Adding child Ctrls - widgets, reacting to widget events\377";
+
+uses
+	CtrlLib;
+
+file
+	main.cpp;
+
+mainconfig
+	"" = "GUI";
+

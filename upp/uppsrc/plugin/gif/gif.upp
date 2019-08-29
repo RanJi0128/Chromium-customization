@@ -1,0 +1,12 @@
+description "GIF image file format\3770,128,128";
+
+uses
+	Draw;
+
+file
+	gif.h,
+	gifupp.cpp,
+	gif.icpp,
+	Info readonly separator,
+	Copying;
+

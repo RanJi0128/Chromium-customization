@@ -1,0 +1,11 @@
+description "Multiple main windows\377";
+
+uses
+	CtrlLib;
+
+file
+	main.cpp;
+
+mainconfig
+	"" = "GUI";
+

@@ -1,0 +1,9 @@
+description "DBase/FoxBase .dbf files support\3770,128,128";
+
+uses
+	Core;
+
+file
+	dbf.h,
+	dbf.cpp;
+

@@ -1,0 +1,12 @@
+description "Using XmlRpc with public XmlRpc server\377";
+
+uses
+	Core,
+	Core\Rpc;
+
+file
+	main.cpp;
+
+mainconfig
+	"" = "";
+

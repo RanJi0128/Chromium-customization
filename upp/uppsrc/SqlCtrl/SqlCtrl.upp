@@ -1,0 +1,26 @@
+description "GUI widgets and routines for SQL\377";
+
+uses
+	Sql,
+	CtrlLib,
+	Report,
+	CodeEditor;
+
+file
+	SqlCtrl.h options(BUILDER_OPTION) PCH,
+	SqlCtrl.t charset "UTF-8",
+	SqlCtrl_init.cpp,
+	SqlCtrl.cpp,
+	SqlArray.cpp,
+	SqlDetail.cpp,
+	SqlDlg.h,
+	SqlDlg.cpp,
+	SqlObjectTree.cpp,
+	SqlConsole.cpp,
+	SqlCtrl.lay,
+	SqlCtrl.iml,
+	SqlCtrl.usc,
+	Info readonly separator,
+	Copying,
+	src.tpp;
+

@@ -1,0 +1,13 @@
+description "Generic ODBC interface\377";
+
+uses
+	Sql;
+
+library(WIN32) odbc32;
+
+library(!WIN32) odbc;
+
+file
+	ODBC.h,
+	ODBC.cpp;
+

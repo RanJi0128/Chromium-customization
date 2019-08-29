@@ -1,0 +1,14 @@
+description "Puzzle game\377";
+
+uses
+	CtrlLib;
+
+file
+	Puzzle.cpp,
+	Puzzle.t charset "UTF-8",
+	Puzzle.iml,
+	Puzzle.lay;
+
+mainconfig
+	"" = "GUI";
+

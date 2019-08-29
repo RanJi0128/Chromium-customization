@@ -1,0 +1,85 @@
+Urr - UDP request-response protocol
+============
+
+Motivation: To provide simple effective by reliable protocol for request-response,
+where both request and response are usually (but not required to) small text messages, <8KB.
+
+Urr can handle request-response situation using only two datagram, in ideal situation,
+while adding security to UDP, which can handle lost, delayed or duplicated datagrams and
+response messages longer than 8KB. (It also, as an option, provides one-way messages without
+security).
+
+In following, data structres are described using C; all data are in little-endian architecture,
+word is 16 bit word, Uuid is 16 bytes unique identificator (random generated with high quality
+random generator).
+
+Request:
+
+Header:
+
+struct UrrRequestHdr {
+	Uuid        id;         // unique identifier of request
+	byte        version;    // now 0
+	byte        flags;      // bit flags - now can be 0 or URR_ONEWAY (0x01)
+	word        blksize;    // maximum length of one datagram in response (default 8000)
+};
+
+The only allowed option in flags so far is URR_ONEWAY (0x01) - it instructs server not to
+send the response (avoids security).
+
+Header is followed by request, size of request is limited by maximum UDP datagram size
+(safe bet is 8000 bytes).
+
+Response:
+
+Header:
+
+struct UrrResponseHdr {
+	Uuid        id;
+	int         part;
+};
+
+id has the value from UrrRequestHdr; this assures that client can distiguish the correct
+response (e.g. if some datagrams get duplicated and/or delayed).
+
+part designates the meaing of datagram. It can be positive index of block or one of
+
+URR_LAST       = -1, // this is the last datagram of response
+URR_FIN        = -2, // finalizing multi-datagram response
+URR_SINGLE     = -3, // this is single datagram response
+URR_PROCESSING = -4, // server is still processing the request, retry later
+
+Protocol:
+
+In the most common case, when reponse fits the single datagram and no timeout (e.g. packed lost)
+is involved, all the request response consists of two datagrams. Server response with URR_SINGLE,
+client only checks the match of 'id' and roundtrip is finished.
+
+If client does not recieve the response in defined time, it repeats the request. 'id' will make
+sure that server does not process the request again (server stores all request ids 10 seconds back).
+
+If response is longer than 'blksize' of request, things get complicated, as response has to be split
+into more parts. Server graduallty sends datagrams with 'part' equal 0, 1, 2, ....
+
+Client acknowledges every part by sending the content of UrrResponseHdr back (without the data).
+
+The last datagram has 'part' = URR_LAST, this gets acknowledged too.
+
+If client fails to recieve the correct part of sequence (datagram lost or timeout), it sends back
+the acknowledge of last good datagramm - this will make server to restart from that point.
+
+After URR_LAST server sends one last URR_FIN to make client aware that acknowledge was not lost
+(otherwise client has to send it again). If URR_FIN is lost, client repeats sending URR_LAST
+acknowledge and server ignores them - lost URR_FIN has performance impact on client, but it is not
+an error (reason: it is better to stall the client rather than server).
+
+More about server:
+
+Server in principle stores last 10 seconds (adjustable default) requests based on Uuid and response to them.
+It is also possible that server application for some kind of requests tells the server not to store response
+(e.g. if response does not change the server) - in that case repeated request is performed again.
+
+Server also can store response responses of last second (adjustable). That is because in input queue there can
+be repeated request while it is processed. Therefore server would response more times. Server also
+stores requests known to being processed - if these requests repeat, server responds with URR_PROCESSING.
+Client should interpret this as more waiting for result is required.

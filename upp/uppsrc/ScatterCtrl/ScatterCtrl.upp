@@ -1,0 +1,28 @@
+description "Scatter control to plot in GUI applications based on ScatterDraw\377";
+
+uses
+	CtrlLib,
+	plugin\jpg,
+	ScatterDraw,
+	GridCtrl;
+
+file
+	ScatterCtrl.cpp,
+	ScatterCtrl.h,
+	ScatterCtrlX.cpp,
+	Properties.cpp,
+	Properties.h,
+	Processing.cpp,
+	Data.cpp,
+	ScatterCtrl.iml,
+	PopUpText.cpp,
+	ScatterCtrl.lay,
+	PopUpText.h,
+	PieCtrl.cpp,
+	PieCtrl.h,
+	ScatterCtrl.t,
+	ScatterCtrl.usc,
+	srcdoc.tpp,
+	src.tpp,
+	Copying;
+

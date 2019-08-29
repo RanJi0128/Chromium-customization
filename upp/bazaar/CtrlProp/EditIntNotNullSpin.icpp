@@ -1,0 +1,10 @@
+#include "CtrlPropCommon.h"
+
+NAMESPACE_UPP
+
+PROPERTIES(EditIntNotNullSpin, EditIntSpin)
+END_PROPERTIES
+
+PROPS(Ctrl, EditIntNotNullSpin, EditIntSpin)
+
+END_UPP_NAMESPACE

@@ -1,0 +1,11 @@
+description "Basic Callbacks\377";
+
+uses
+	Core;
+
+file
+	main.cpp;
+
+mainconfig
+	"" = "";
+

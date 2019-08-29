@@ -1,0 +1,12 @@
+description "Layouts\377";
+
+uses
+	CtrlLib;
+
+file
+	main.cpp,
+	dlg.lay;
+
+mainconfig
+	"" = "GUI";
+

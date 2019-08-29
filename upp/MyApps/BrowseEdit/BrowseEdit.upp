@@ -1,0 +1,22 @@
+description "BrowseEdit class library \377";
+
+uses
+	CtrlLib,
+	include,
+	libcef_dll;
+
+file
+	BrowseEdit.cpp,
+	BrowseEdit.iml,
+	BrowseEdit.lay,
+	BrowseEdit.h,
+	Editor.cpp,
+	EncodeHTML.cpp,
+	libcef.cpp,
+	libcef.h,
+	HTML2QTF.cpp,
+	parsehtml.c,
+	parsehtml.h,
+	avl.c,
+	avl.h;
+

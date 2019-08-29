@@ -1,0 +1,22 @@
+description "SDLCtrl examples\377";
+
+noblitz;
+
+uses
+	Core,
+	CtrlLib,
+	SDL;
+
+file
+	main.cpp,
+	demo.lay,
+	demo1main.cpp,
+	demo1.cpp,
+	demo1.h,
+	demo1.lay,
+	demobasic.cpp,
+	demobasic.lay;
+
+mainconfig
+	"" = "GUI NOGTK";
+

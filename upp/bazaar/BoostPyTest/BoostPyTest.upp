@@ -1,0 +1,24 @@
+uses
+	CtrlLib,
+	PyConsoleCtrl,
+	ValueCtrl,
+	CtrlLibBoostPy;
+
+file
+	PyConsoleCtrl.h,
+	PyConsoleCtrl.cpp,
+	world.h,
+	world.cpp,
+	PyEx.h,
+	PyEx.icpp,
+	app readonly separator,
+	BoostPyTest.h,
+	main.cpp,
+	BoostPyTest.lay,
+	modules.cppi,
+	pyenv.cpp,
+	compile.txt;
+
+mainconfig
+	"" = "GUI MT BOOSTPY SVO_VALUE";
+

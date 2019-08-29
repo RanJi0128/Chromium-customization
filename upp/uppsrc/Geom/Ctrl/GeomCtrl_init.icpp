@@ -1,0 +1,8 @@
+#include "GeomCtrl.h"
+
+namespace Upp {
+
+#define TFILE <Geom/Ctrl/GeomCtrl.t>
+#include <Core/t.h>
+
+}

@@ -1,0 +1,11 @@
+uses
+	Core,
+	plugin\kissfft;
+
+file
+	kissfir.h,
+	kissfir.cpp;
+
+mainconfig
+	"" = "MT FAST_FILT_UTIL";
+

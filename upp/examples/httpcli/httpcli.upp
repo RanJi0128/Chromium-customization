@@ -1,0 +1,11 @@
+description "Command-line driven HTTP client\377";
+
+uses
+	Core;
+
+file
+	main.cpp;
+
+mainconfig
+	"" = "";
+

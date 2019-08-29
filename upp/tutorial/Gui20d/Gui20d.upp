@@ -1,0 +1,12 @@
+description "Breaking the modal loop\377";
+
+uses
+	CtrlLib;
+
+file
+	main.cpp,
+	myapp.lay;
+
+mainconfig
+	"" = "GUI";
+

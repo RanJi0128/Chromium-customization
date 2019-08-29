@@ -1,0 +1,8 @@
+mingw64 toolchains downloaded from
+
+https://sourceforge.net/projects/mingw-w64/files/mingw-w64/
+
+x86_64-win32-seh
+i686-win32-dwarf
+
+directories renamed mingw32->32, mingw64->64

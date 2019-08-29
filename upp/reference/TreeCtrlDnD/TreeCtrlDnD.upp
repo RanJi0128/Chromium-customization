@@ -1,0 +1,11 @@
+description "Drag & Drop with TreeCtrl as target\377";
+
+uses
+	CtrlLib;
+
+file
+	main.cpp;
+
+mainconfig
+	"" = "GUI";
+

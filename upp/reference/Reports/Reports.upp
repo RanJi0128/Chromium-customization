@@ -1,0 +1,14 @@
+description "Report example\377";
+
+uses
+	CtrlLib,
+	Report,
+	Painter,
+	Painter;
+
+file
+	main.cpp;
+
+mainconfig
+	"" = "GUI";
+

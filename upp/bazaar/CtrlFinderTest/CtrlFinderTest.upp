@@ -1,0 +1,14 @@
+description "example how to find a Ctrl in a live environment\377";
+
+uses
+	CtrlLib,
+	CtrlFinder;
+
+file
+	CtrlFinderTest.h,
+	main.cpp,
+	CtrlFinderTest.lay;
+
+mainconfig
+	"" = "GUI MT";
+

@@ -1,0 +1,13 @@
+description "OpenGL based GLDraw demo\377";
+
+uses
+	CtrlLib,
+	GLDraw,
+	GLCtrl;
+
+file
+	main.cpp;
+
+mainconfig
+	"" = "GUI";
+

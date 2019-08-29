@@ -1,0 +1,11 @@
+description "Persistency using XML\377";
+
+uses
+	Core;
+
+file
+	Xmlize.cpp;
+
+mainconfig
+	"" = "";
+

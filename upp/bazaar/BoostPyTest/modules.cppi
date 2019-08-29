@@ -1,0 +1,32 @@
+//CAUTION this one is included in the main cpp file, where the modules are registered into python environment
+
+BOOST_PYTHON_MODULE(hello)
+{
+	scope().attr("__doc__") = "hello module";
+	export_world();
+}
+
+BOOST_PYTHON_MODULE(upp)
+{
+	scope().attr("__doc__") = "upp module";
+	export_Core();
+	export_CtrlCore();
+	export_CtrlLib();
+	
+	export_PyConsoleCtrl();
+
+	export_Callback1(int);
+	export_Gate1(int);
+
+	export_Callback1(Value);
+	export_Gate1(Value);
+
+	export_Callback2(int, double);
+	export_Gate2(int, double);
+
+	export_Callback3(int, double, bool);
+	export_Gate3(int, double, bool);
+
+	export_Callback4(int, double, bool, int64);
+	export_Gate4(int, double, bool, int64);
+}

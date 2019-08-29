@@ -1,0 +1,28 @@
+description "Window Docking framework\377";
+
+uses
+	CtrlLib,
+	TabBar;
+
+file
+	Docking readonly separator,
+	Docking.h,
+	DockWindow.cpp,
+	DockConfig.cpp,
+	DockMenu.h,
+	DockMenu.cpp,
+	DockableCtrl.h,
+	DockableCtrl.cpp,
+	ToolWin.h,
+	ToolWin.cpp,
+	DockCont.h,
+	DockCont.cpp,
+	DockPane.h,
+	DockPane.cpp,
+	DockTabBar.h,
+	DockTabBar.cpp,
+	Docking.iml,
+	Docking.lay,
+	src.tpp,
+	Docking.t charset "UTF-8";
+

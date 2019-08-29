@@ -1,0 +1,25 @@
+description "Partly heurestic (imprecise) C++ parser for purposes of Assist++ (intellisense)\377";
+
+uses
+	Core;
+
+file
+	CppBase.h options(BUILDER_OPTION) PCH,
+	keyword.i,
+	ppconfig.cpp,
+	macro.cpp,
+	ppfile.cpp,
+	srcfiles.cpp,
+	cpp.cpp,
+	Pre.cpp,
+	cpplex.cpp,
+	Parser.cpp,
+	Body.cpp,
+	Base.cpp,
+	ScopeInfo.cpp,
+	Qualify.cpp,
+	CppItem.cpp,
+	Expression.cpp,
+	Info readonly separator,
+	Copying;
+

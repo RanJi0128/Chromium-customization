@@ -1,0 +1,11 @@
+description "moving a Ctrl in a live environment\377";
+
+uses
+	CtrlLib,
+	CtrlFinder,
+	RectCtrl;
+
+file
+	CtrlMover.h,
+	CtrlMover.cpp;
+

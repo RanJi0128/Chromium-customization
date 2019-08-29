@@ -1,0 +1,12 @@
+description "Protect server demo\377";
+
+uses
+	ProtectServer;
+
+file
+	main.cpp;
+
+mainconfig
+	"" = "USE_SQLITE",
+	"" = "";
+

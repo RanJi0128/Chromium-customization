@@ -1,0 +1,15 @@
+description "Docking example showing advanced features inc. Serialization.\377";
+
+uses
+	CtrlLib,
+	Docking;
+
+file
+	main.cpp,
+	DockingExample.lay,
+	DefaultLayout.brc,
+	app.tpp;
+
+mainconfig
+	"" = "GUI";
+

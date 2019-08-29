@@ -1,0 +1,7 @@
+LAYOUT(QuickwatchLayout, 400, 372)
+	ITEM(WithDropChoice<EditString>, expression, HSizePosZ(4, 4).TopPosZ(4, 19))
+	ITEM(LineEdit, value, HSizePosZ(4, 4).VSizePosZ(28, 32))
+	ITEM(Button, ok, SetLabel(t_("OK")).HCenterPosZ(64, 164).BottomPosZ(6, 22))
+	ITEM(Button, cancel, SetLabel(t_("Cancel")).RightPosZ(76, 64).BottomPosZ(6, 22))
+END_LAYOUT
+

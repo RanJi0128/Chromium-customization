@@ -1,0 +1,12 @@
+description "Viewer of DBF files\377";
+
+uses
+	plugin\dbf,
+	CtrlLib;
+
+file
+	DbfView.cpp;
+
+mainconfig
+	"" = "GUI";
+

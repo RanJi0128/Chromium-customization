@@ -1,0 +1,11 @@
+description "Logging to Oracle\377";
+
+uses
+	Oracle;
+
+file
+	main.cpp;
+
+mainconfig
+	"" = "";
+

@@ -1,0 +1,15 @@
+description "another example on how to change Ctrl LogPos in a live environment\377";
+
+uses
+	CtrlLib,
+	CtrlPos,
+	AutoScroller;
+
+file
+	CtrlPosTest2.h,
+	main.cpp,
+	CtrlPosTest2.lay;
+
+mainconfig
+	"" = "GUI MT";
+

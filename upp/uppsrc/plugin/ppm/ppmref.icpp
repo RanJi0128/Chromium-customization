@@ -1,0 +1,9 @@
+#include "ppm.h"
+
+namespace Upp {
+
+INITBLOCK {
+	StreamRaster::Register<PPMRaster>();
+}
+
+}

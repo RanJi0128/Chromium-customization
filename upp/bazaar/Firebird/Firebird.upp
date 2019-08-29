@@ -1,0 +1,16 @@
+description "Firebird/Interbase interface\377";
+
+uses
+	Sql;
+
+file
+	fb.h,
+	fb.cpp,
+	Firebird.h,
+	Firebird.cpp,
+	Firebird.dli,
+	FirebirdSchema.h;
+
+mainconfig
+	"" = "";
+

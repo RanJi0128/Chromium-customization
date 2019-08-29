@@ -1,0 +1,32 @@
+description "Rich text editor\3770,0,255";
+
+uses
+	CtrlLib;
+
+file
+	RichEdit.h options(BUILDER_OPTION) PCH,
+	Ruler.cpp,
+	UnitEdit.cpp,
+	Editor.cpp,
+	Speller.cpp,
+	Kbd.cpp,
+	Mouse.cpp,
+	Cursor.cpp,
+	Undo.cpp,
+	Modify.cpp,
+	Formating.cpp,
+	FormatDlg.cpp,
+	ParaFormat.cpp,
+	TableUndo.cpp,
+	Table.cpp,
+	Find.cpp,
+	Tool.cpp,
+	Clip.cpp,
+	StyleKeys.cpp,
+	HeaderFooter.cpp,
+	RichEdit.t charset "UTF-8",
+	RichEdit.lay,
+	RichEdit.iml,
+	Info readonly separator,
+	Copying;
+

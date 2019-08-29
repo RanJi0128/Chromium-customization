@@ -1,0 +1,25 @@
+uses
+	CtrlLib,
+	Controls4U;
+
+options(WIN32) -DPIPPO=gigi;
+
+file
+	Standard_MMgrRoot_HXX,
+	Image_AlienPixMap_CXX,
+	Image_AlienPixMap_HXX,
+	OCE_UPP,
+	OCE_H,
+	OCEDoc_H,
+	OCEDoc_CPP,
+	OCECtrl_H,
+	OCECtrl_CPP,
+	OCE_AlienPixMap_ICPP,
+	Oce2Upp.brc,
+	Oce2Upp.lay,
+	Oce2Upp.h,
+	Oce2Upp.cpp;
+
+mainconfig
+	"" = "GUI";
+

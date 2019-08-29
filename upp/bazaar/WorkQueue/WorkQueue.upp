@@ -1,0 +1,9 @@
+description "A WorkQueue, a single additional Thread, to serially process work in background\377";
+
+uses
+	Core;
+
+file
+	WorkQueue.h,
+	WorkQueue.cpp;
+

@@ -1,0 +1,11 @@
+description "CoWorkerResources provide per-worker-thread context\377";
+
+uses
+	Core;
+
+file
+	CoWorkerResources.cpp;
+
+mainconfig
+	"" = "MT";
+
